@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEZ MOYA - Restaurant Fictif</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CDN Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Section Héros Personnalisée */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+            min-height: 80vh;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. BARRE DE NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-warning" href="#">MOYA Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#a-propos">À propos de nous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. SECTION HÉROS -->
+    <section id="accueil" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Une Expérience Culinaire Unique</h1>
+            <p class="lead mb-4">Découvrez nos plats savoureux préparés avec des ingrédients frais et locaux.</p>
+            <a href="#menu" class="btn btn-warning btn-lg fw-bold px-4">Réserver une table</a>
+        </div>
+    </section>
+
+    <!-- 3. SECTION MENU -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Notre Menu</h2>
+            <div class="row g-4">
+                <!-- Plat 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/foutou sauce graine.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Foutou sauce graine</h5>
+                            <p class="card-text text-muted flex-grow-1">Banane plantain accompagné de sauce graine escargot, crables, viande de boeuf</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-warning">5000 FR</span>
+                                <button class="btn btn-outline-dark btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plat 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/kedjenou-de-poulet-ivoirien.webp">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">kedjenou de poulet</h5>
+                            <p class="card-text text-muted flex-grow-1">Poulet local, accompagné d'attiéké ou riz.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-warning">7000 FR</span>
+                                <button class="btn btn-outline-dark btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plat 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Placali_avec_sauce_gombo.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Placali</h5>
+                            <p class="card-text text-muted flex-grow-1">Accompagné de sauce gombo, sauce graine, crable, kplo, poisson fumé</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-warning">4000 FR</span>
+                                <button class="btn btn-outline-dark btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION À PROPOS DE NOUS -->
+    <section id="a-propos" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded shadow" alt="Intérieur du restaurant">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">À Propos MOYA Restaurant</h2>
+                    <p class="lead text-muted">Fondé en 2018, notre restaurant s'engage à offrir une expérience gastronomique chaleureuse et raffinée des mets ivoiriens</p>
+                    <p>Notre chef retravaille les grands classiques de la cuisine traditionnelle avec une touche moderne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION CONTACT -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="text-center fw-bold mb-4">Contactez-nous</h2>
+                    <form class="bg-white p-4 rounded shadow-sm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input type="text" class="form-field form-control" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nom@exemple.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 fw-bold">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; MOYA Restaurant.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CDN Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
